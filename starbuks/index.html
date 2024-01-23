@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- ==poppins font=============================================== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="Logo"><img src="img/logo.png"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">abuot</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="TextBox">
+                <h2>It's not just Coffee<br>It's<span>Starbucks</span></h2>
+                <p>The bean has traveled the world for centuries, being smuggled out of tough countries, kidnapped from
+                    royalty, and changing entire countries and economies. It is remarkable how a small bean from a small
+                    tree in Ethiopia can become the second largest traded commodity in the world.</p>
+                <a href="learn more.html">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/img1.png" class="Starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="img/thumb1.png" onclick="imgslider('img/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="img/thumb2.png" onclick="imgslider('img/img2.png');changeCircleColor('#017143')"></li>
+            <li><img src="img/thumb3.png" onclick="imgslider('img/img3.png');changeCircleColor('#017143')"></li>
+        </ul>
+        <ul class="sci">
+        <li>
+            <a href="#">
+                <img src="img/facebook.png">
+            </a>
+        <li>
+            <a href="#">
+                <img src="img/instagram.png">
+            </a>
+        <li>
+            <a href="#">
+                <img src="img/twitter.png">
+            </a>
+        </li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgslider(anything) {
+            document.querySelector('.Starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+
+</body>
+
+</html>
